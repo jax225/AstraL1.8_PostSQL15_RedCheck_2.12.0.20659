@@ -144,7 +144,7 @@ wget https://disk.redcheck.ru/distr/Linux/2.12/redcheck-astra1.8-repo-2.12.0.206
 # Пример для файла в домашней директории
 sudo tar -xvf ~/Загрузки/redcheck-astra1.8-repo-2.12.0.20659.tar.gz -C /usr/local/src
 ```
-### 2. Импортирт GPG-ключа и подключение репозиториев
+### 2. Импортировать GPG-ключ и подключить репозиторий
 ```json
 sudo gpg --no-default-keyring --keyring /etc/apt/keyrings/redcheck-keyring.gpg --import /usr/local/src/redcheck-astra-repo/PUBLIC-GPG-KEY-redcheck
 echo "deb [signed-by=/etc/apt/keyrings/redcheck-keyring.gpg] file:/usr/local/src/redcheck-astra-repo/ 1.8_x86-64 non-free" | sudo tee /etc/apt/sources.list.d/redcheck.list
